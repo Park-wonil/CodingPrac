@@ -1,4 +1,4 @@
-# 코드트리,백준 코딩 테스트 문제 풀이 저장소 입니다 👨🏻‍💻
+# 코드트리, 코딩 테스트 문제 풀이 저장소 입니다 👨🏻‍💻
 
 ### 사용언어
 <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
@@ -13,3 +13,5 @@
 ### 목표 🔥
 - AI CNN 구현
 - HUFS 해커톤 입상
+
+각 문제 C,python 둘다 풀기
