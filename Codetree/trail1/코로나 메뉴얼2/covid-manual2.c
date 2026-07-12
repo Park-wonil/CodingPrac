@@ -5,7 +5,7 @@ int main() {
     int arr[3];
     char arr2[3];
     for(int i=0;i<3;i++){
-        scanf(" %c %d",&arr2[i],&arr[i]);
+        scanf("%c %d\n",&arr2[i],&arr[i]);
         if(arr[i]>=37 && arr2[i]=='Y'){
             a++;
         }else if(arr[i]>=37 && arr2[i]=='N'){
