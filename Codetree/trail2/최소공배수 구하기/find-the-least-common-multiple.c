@@ -1,24 +1,26 @@
 #include <stdio.h>
-
-int gcd(int a, int b){
-    while(b != 0){
-        int temp = b;
-        b = a % b;
-        a = temp;
+int gcd(int a,int b){
+    int max=1;
+    if(a>b){
+        for(int i=1;i<=b;i++){
+            if(a%i==0 && b%i==0){
+                max = i;
+            }
+        }
+    }else{
+        for(int i=1;i<=a;i++){
+            if(a%i==0 && b%i==0){
+                max = i;
+            }
+        }
     }
-    return a;
+    return max;
 }
-
-int lcm(int a, int b){
-    return a * b / gcd(a, b);
-}
-
-int main(){
-    int a, b;
-
-    scanf("%d %d", &a, &b);
-
-    printf("%d\n", lcm(a, b));
-
+int main() {
+    int n, m;
+    scanf("%d %d", &n, &m);
+    
+    printf("%d",n*m/gcd(n,m));
+    
     return 0;
 }
