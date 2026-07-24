@@ -1,10 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
 #define MAX_N 50
 int arr[MAX_N];
 void abs1(int *arr,int x){
     for(int i=0;i<x;i++){
-        printf("%d ",abs(*(arr+i)));
+        if(*(arr+i)>=0){
+            printf("%d ",*(arr+i));}
+        else{
+            printf("%d ",-*(arr+i));
+        }
     }
 }
 int main() {
