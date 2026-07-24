@@ -4,7 +4,7 @@ void check(char *a,int x){
     char b[100];
     int cnt=0;
     for(int i=x;i>=0;i--){
-        b[cnt]=a[i];
+        b[cnt]=*(a+i);
         cnt++;
     }
     b[cnt]='\0';
