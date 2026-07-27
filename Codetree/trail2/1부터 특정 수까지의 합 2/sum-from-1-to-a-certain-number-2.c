@@ -1,11 +1,10 @@
 #include <stdio.h>
 int cnt;
 int wonil(int x){
-    if(x==0){
-        return cnt;
+    if(x==1){
+        return 1;
     }
-    cnt+=x;
-    wonil(x-1);
+    return x+(wonil(x-1));
 
 }
 int main() {
