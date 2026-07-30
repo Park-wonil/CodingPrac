@@ -5,10 +5,10 @@ char str[101],temp;
 void sort1(char *str){
     for(int i=0;i<strlen(str)-1;i++){
         for(int j=i+1;j<strlen(str);j++){
-            if((int)*(str+i)>(int)*(str+j)){
-                temp = *(str+j);
-                *(str+j)= *(str+i);
-                *(str+i)= temp; 
+            if(str[i]>str[j]){
+                temp = str[i];
+                str[i]=str[j];
+                str[j]=temp; 
             }
         }
     }
