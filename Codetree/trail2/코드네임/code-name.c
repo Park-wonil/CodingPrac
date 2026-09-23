@@ -9,18 +9,17 @@ User users[5];
 
 int main(){
     int i;
+    User *p = users;
     for(i = 0; i < 5; i++){
-        scanf(" %c %d", &users[i].code_name, &users[i].score);
+        scanf(" %c %d", &(p+i)->code_name, &(p+i)->score);
     }
-    int min = users[0].score,min_idx=0;
-    for(i=1;i<=4;i++){
-        if(min>users[i].score){
-            min = users[i].score;
-            min_idx=i;
+    int min_idx = 0;
+    for(i =1;i<5;i++){
+        if((p+i)->score<(p+min_idx)->score){
+            min_idx = i;
         }
     }
-    printf("%c %d",users[min_idx].code_name,min);
-        
+    printf("%c %d",(p+min_idx)->code_name,(p+min_idx)->score);
 
     
     return 0;
